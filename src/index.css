@@ -66,7 +66,7 @@ h5:after {
 
 
 .second-page-box{
-  height: 45vh;
+  height: 50vh;
   width: 40vh;
   background-color: white;
   position: absolute;
@@ -83,8 +83,8 @@ h5:after {
 }
 
 .location img{
-  height: 7%;
-  width: 7%;
+  height: 5%;
+  width: 5%;
 }
 
 img{
@@ -98,10 +98,10 @@ img{
 }
 
 .weather{
-  font-size: 21px;
+  font-size: 19px;
   text-align: center;
   /* margin: -5px 20px 15px;; */
-  padding:5px;
+  padding:3px;
 }
 
 .flex-container {
@@ -120,10 +120,10 @@ img{
 
 .v1 {
   border: 2px solid #ccc;
-  height: 61px;
+  height: 56px;
   position: absolute;
   left: 50%;
-  margin-top:90%;
+  margin-top:100%;
   margin-left: -3px;
   top: 0;
 }

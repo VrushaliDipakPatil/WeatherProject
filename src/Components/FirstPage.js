@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import { useNavigate } from '../../node_modules/react-router-dom/dist/index'
 
-export default function FirstPage(props) {
+export default function FirstPage({ prop2}) {
 
   function setLocation(city) {
     setSearchValue(city)
-    console.log(city)
+
   }
 
   const [searchValue, setSearchValue] = useState("")
@@ -33,7 +33,7 @@ export default function FirstPage(props) {
   const navigate = useNavigate();
   const [weatherdata, setWeatherData] = useState({})
   function NextPageClick(data){
-    navigate('/weatherdata', { state: { message: data }});
+    navigate('/weatherdata', {state:data});
  
   }
 
@@ -59,7 +59,8 @@ export default function FirstPage(props) {
           temp, humidity, weathermood, name, country, feels_like
         };
         setWeatherData(weatherinfo);
-        NextPageClick(weatherinfo)
+        prop2(weatherinfo)
+        NextPageClick( weatherinfo)
       }
 
     } catch (error) {
@@ -74,8 +75,7 @@ export default function FirstPage(props) {
       <div className="first-page-box" >
         <div className="header">
           <b>Weather App</b>
-          <b style={{ paddingLeft: '150px' }} 
-          onClick={getWeatherInfo}
+          <b onClick={getWeatherInfo}
           >&rarr;</b>
         </div>
         <hr />
