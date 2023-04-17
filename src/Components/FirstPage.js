@@ -2,8 +2,11 @@
 import React, { useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import { useNavigate } from '../../node_modules/react-router-dom/dist/index'
+import { useDispatch } from '../../node_modules/react-redux/es/exports'
+import { WeatherInfo } from './WeatherSlice'
 
-export default function FirstPage({ prop2}) {
+export default function FirstPage() {
+    const dispatch = useDispatch()
 
   function setLocation(city) {
     setSearchValue(city)
@@ -57,8 +60,9 @@ export default function FirstPage({ prop2}) {
         const weatherinfo = {
           temp, humidity, weathermood, name, country, feels_like
         };
-        prop2(weatherinfo)
         NextPageClick( )
+        dispatch(WeatherInfo(weatherinfo))
+        
       }
 
     } catch (error) {
