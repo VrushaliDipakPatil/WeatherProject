@@ -31,9 +31,8 @@ export default function FirstPage({ prop2}) {
   }
 
   const navigate = useNavigate();
-  const [weatherdata, setWeatherData] = useState({})
   function NextPageClick(data){
-    navigate('/weatherdata', {state:data});
+    navigate('/weatherdata');
  
   }
 
@@ -58,9 +57,8 @@ export default function FirstPage({ prop2}) {
         const weatherinfo = {
           temp, humidity, weathermood, name, country, feels_like
         };
-        setWeatherData(weatherinfo);
         prop2(weatherinfo)
-        NextPageClick( weatherinfo)
+        NextPageClick( )
       }
 
     } catch (error) {
