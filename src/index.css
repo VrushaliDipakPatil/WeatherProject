@@ -66,7 +66,7 @@ h5:after {
 
 
 .second-page-box{
-  height: 50vh;
+  height: 47vh;
   width: 40vh;
   background-color: white;
   position: absolute;
@@ -120,10 +120,10 @@ img{
 
 .v1 {
   border: 2px solid #ccc;
-  height: 56px;
+  height: 60px;
   position: absolute;
   left: 50%;
-  margin-top:100%;
+  margin-top:95%;
   margin-left: -3px;
   top: 0;
 }
