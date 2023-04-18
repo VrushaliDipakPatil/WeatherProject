@@ -44,7 +44,7 @@ export default function FirstPage() {
       toast.error("Please Enter City Name", {style:{color:'skyblue'}})
     }else{
     try {
-      const apiKey = '26254e0f31c6554c670f65ec995fd8f8';
+      const apiKey = 'API_KEY';
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=${apiKey}&units=metric`
       const res = await fetch(url);
       const data = await res.json();
