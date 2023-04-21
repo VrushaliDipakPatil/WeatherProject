@@ -37,7 +37,7 @@ const Temp = () => {
 
   const getWeatherInfo = async () => {
     try {
-      const apiKey = '26254e0f31c6554c670f65ec995fd8f8';
+      const apiKey = 'API_KEY';
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=${apiKey}`;
 
       let res = await fetch(url);

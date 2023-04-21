@@ -16,7 +16,7 @@ $npm install @reduxjs/toolkit
 
 ## Configuration
 
-Before running the app, you will need to obtain an API key from OpenWeatherMap by signing up for a free account. Once you have your API key, paste it in the place of 'API_KEY' in FirstPage.js
+Before running the app, you will need to obtain an API key from OpenWeatherMap by signing up for a free account. Once you have your API key, paste it in the place of 'API_KEY' in Temp.js
 
 
 
